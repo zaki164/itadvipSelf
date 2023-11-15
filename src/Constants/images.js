@@ -5,7 +5,6 @@ import snapchat from "../assets/PRIMARY_-_GHOST.png";
 import tiktok from "../assets/tik-tok.png";
 import twitter from "../assets/twitter-alt.png";
 import logo from "../assets/logo.png";
-import landbg from "../assets/landbg.png";
 import diamond from "../assets/diamond.png";
 import gauge from "../assets/gauge-circle-bolt.png";
 import shield from "../assets/shield-check.svg";
@@ -36,7 +35,6 @@ const images = {
   tiktok,
   twitter,
   logo,
-  landbg,
   diamond,
   gauge,
   shield,

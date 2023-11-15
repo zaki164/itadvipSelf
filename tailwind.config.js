@@ -53,7 +53,7 @@ export default {
         Dosis: ["Dosis", "sans-serif"],
       },
       backgroundImage: {
-        land: "url('./src/assets/landbg.png')",
+        land: "url('/landbg.png')",
       },
     },
   },
