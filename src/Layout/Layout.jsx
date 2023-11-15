@@ -10,8 +10,9 @@ import {
 } from "../Components";
 import { useGetSettingsDataQuery } from "../store/SettingsApi";
 import { useEffect } from "react";
+import Router from "../Router/Router";
 
-const Layout = ({ children }) => {
+const Layout = () => {
   const { i18n } = useTranslation();
   const { data, isFetching, isError, error, refetch } =
     useGetSettingsDataQuery();
@@ -35,7 +36,8 @@ const Layout = ({ children }) => {
         <Navbar />
       </div>
       <div className="pt-[110px] sm:pt-[120px] md:pt-[158px] lg:pt-[170px]">
-        {children}
+        {/* {children} */}
+        <Router />
       </div>
       <WhatsApp number={data?.data?.settings?.phone} />
       <Footer footerData={data?.data} />
