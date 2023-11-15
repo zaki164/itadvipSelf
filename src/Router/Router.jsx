@@ -11,7 +11,7 @@ const Router = () => {
   return (
     <Suspense fallback={<Loader />}>
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<About />} />
         <Route path="/contact-us" element={<Contact />} />
         <Route path="/portfolio/">

@@ -4,15 +4,14 @@ import {
   Navbar,
   Footer,
   Copyright,
-  // ScrollToHashElement,
+  ScrollToHashElement,
   Loader,
   WhatsApp,
 } from "../Components";
 import { useGetSettingsDataQuery } from "../store/SettingsApi";
 import { useEffect } from "react";
-import Router from "../Router/Router";
 
-const Layout = () => {
+const Layout = ({ children }) => {
   const { i18n } = useTranslation();
   const { data, isFetching, isError, error, refetch } =
     useGetSettingsDataQuery();
@@ -32,12 +31,11 @@ const Layout = () => {
           number={data?.data?.settings?.phone}
           socialLinks={data?.data?.social_links}
         />
-        {/* <ScrollToHashElement /> */}
+        <ScrollToHashElement />
         <Navbar />
       </div>
       <div className="pt-[110px] sm:pt-[120px] md:pt-[158px] lg:pt-[170px]">
-        {/* {children} */}
-        <Router />
+        {children}
       </div>
       <WhatsApp number={data?.data?.settings?.phone} />
       <Footer footerData={data?.data} />
