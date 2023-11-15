@@ -11,13 +11,11 @@ const Router = () => {
   return (
     <Suspense fallback={<Loader />}>
       <Routes>
-        <Route path="/">
-          <Route index element={<Home />} />
-          <Route path="about-us" element={<About />} />
-          <Route path="contact-us" element={<Contact />} />
-          <Route path="portfolio/">
-            <Route path=":slug" element={<SelfProject />} />
-          </Route>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/about-us" element={<About />} />
+        <Route path="/contact-us" element={<Contact />} />
+        <Route path="/portfolio/">
+          <Route path=":slug" element={<SelfProject />} />
         </Route>
       </Routes>
     </Suspense>
