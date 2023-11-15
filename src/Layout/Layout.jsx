@@ -4,7 +4,7 @@ import {
   Navbar,
   Footer,
   Copyright,
-  ScrollToHashElement,
+  // ScrollToHashElement,
   Loader,
   WhatsApp,
 } from "../Components";
@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
           number={data?.data?.settings?.phone}
           socialLinks={data?.data?.social_links}
         />
-        <ScrollToHashElement />
+        {/* <ScrollToHashElement /> */}
         <Navbar />
       </div>
       <div className="pt-[110px] sm:pt-[120px] md:pt-[158px] lg:pt-[170px]">
