@@ -4,6 +4,7 @@ import { ProjectInfo } from "../Section";
 import { useGetSingleProjectDataQuery } from "../store/SingleProjectApi";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 const SelfProject = () => {
   const { i18n } = useTranslation();
@@ -26,6 +27,13 @@ const SelfProject = () => {
     <h1>{error?.data?.message}</h1>
   ) : (
     <>
+      <Helmet>
+        <title>{singleProjectData?.data?.title}</title>
+        <meta
+          name="description"
+          content={singleProjectData?.data?.description}
+        />
+      </Helmet>
       <ProjectInfo data={singleProjectData?.data} />
       <ProjectReview
         appStoreLink={singleProjectData?.data?.apple_link}

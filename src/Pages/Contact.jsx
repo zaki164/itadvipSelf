@@ -15,6 +15,7 @@ import {
   useNeedServicesMutation,
 } from "../store/ContactApi";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
   const { t, i18n } = useTranslation();
@@ -165,6 +166,10 @@ const Contact = () => {
     <h1>{ServicesError?.data?.message}</h1>
   ) : (
     <div>
+      <Helmet>
+        <title>{t("تواصل معنا")}</title>
+        <meta name="description" content={t("افضل الحلول")} />
+      </Helmet>
       <div className="custom-container">
         <Branches data={settingsData?.data?.branches} />
         <section className="section_padding flex max-lg:flex-col-reverse gap-6">

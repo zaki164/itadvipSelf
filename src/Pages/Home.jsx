@@ -9,6 +9,7 @@ import { useGetHomeDataQuery } from "../store/HomeApi";
 import { Loader } from "../Components";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   const { t, i18n } = useTranslation();
@@ -39,6 +40,10 @@ const Home = () => {
     <h1>{error?.data?.message}</h1>
   ) : (
     <>
+      <Helmet>
+        <title>{t("ايتاد")}</title>
+        <meta name="description" content={t("نعريف بنا")} />
+      </Helmet>
       <LandingSection
         banner={homeData?.data?.banner}
         features={homeData?.data?.features}

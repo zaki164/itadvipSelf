@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
 
 const ProjectInfo = ({ data: ele }) => {
-  console.log(ele?.images.length);
   const { t } = useTranslation();
   return (
     <div>
