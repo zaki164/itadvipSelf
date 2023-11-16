@@ -4,11 +4,11 @@ import Router from "./Router/Router";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Layout>
         <Router />
       </Layout>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
