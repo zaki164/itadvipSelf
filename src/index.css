@@ -32,40 +32,43 @@
     font-family: "SST Arabic";
     font-style: normal;
     font-weight: 400;
-    src: url("./assets/fonts/alfont_com_sst-arabic-light.ttf");
+    src: url("/fonts/alfont_com_sst-arabic-light.ttf");
     src: local(""),
-      /* Modern Browsers */
-        url("./assets/fonts/alfont_com_sst-arabic-light.ttf") format("truetype");
+      /* Modern Browsers */ url("/fonts/alfont_com_sst-arabic-light.ttf")
+        format("truetype");
+    font-display: swap;
   }
   @font-face {
     font-family: "SST Arabic";
     font-style: normal;
     font-weight: 500;
-    src: url("./assets/fonts/alfont_com_SST-Arabic-Medium.ttf");
+    src: url("/fonts/alfont_com_SST-Arabic-Medium.ttf");
     src: local(""),
-      /* Modern Browsers */
-        url("./assets/fonts/alfont_com_SST-Arabic-Medium.ttf")
+      /* Modern Browsers */ url("/fonts/alfont_com_SST-Arabic-Medium.ttf")
         format("truetype");
+    font-display: swap;
   }
   @font-face {
     font-family: "SST Arabic";
     font-style: normal;
     font-weight: 600;
-    src: url("./assets/fonts/alfont_com_AlFont_com_SST-Arabic-Roman-1.ttf");
+    src: url("/fonts/alfont_com_AlFont_com_SST-Arabic-Roman-1.ttf");
     src: local(""),
       /* Modern Browsers */
-        url("./assets/fonts/alfont_com_AlFont_com_SST-Arabic-Roman-1.ttf")
+        url("/fonts/alfont_com_AlFont_com_SST-Arabic-Roman-1.ttf")
         format("truetype");
+    font-display: swap;
   }
   @font-face {
     font-family: "SST Arabic";
     font-style: normal;
     font-weight: 700;
-    src: url("./assets/fonts/alfont_com_AlFont_com_SST-Arabic-Bold-2.ttf");
+    src: url("/fonts/alfont_com_AlFont_com_SST-Arabic-Bold-2.ttf");
     src: local(""),
       /* Modern Browsers */
-        url("./assets/fonts/alfont_com_AlFont_com_SST-Arabic-Bold-2.ttf")
+        url("/fonts/alfont_com_AlFont_com_SST-Arabic-Bold-2.ttf")
         format("truetype");
+    font-display: swap;
   }
 
   /* font English */
@@ -73,37 +76,37 @@
     font-family: "Dosis";
     font-style: normal;
     font-weight: 400;
-    src: url("./assets/fonts/Dosis-Light.ttf");
+    src: url("/fonts/Dosis-Light.ttf");
     src: local(""),
-      /* Modern Browsers */ url("./assets/fonts/Dosis-Light.ttf")
-        format("truetype");
+      /* Modern Browsers */ url("/fonts/Dosis-Light.ttf") format("truetype");
+    font-display: swap;
   }
   @font-face {
     font-family: "Dosis";
     font-style: normal;
     font-weight: 500;
-    src: url("./assets/fonts/Dosis-Regular.ttf");
+    src: url("/fonts/Dosis-Regular.ttf");
     src: local(""),
-      /* Modern Browsers */ url("./assets/fonts/Dosis-Regular.ttf")
-        format("truetype");
+      /* Modern Browsers */ url("/fonts/Dosis-Regular.ttf") format("truetype");
+    font-display: swap;
   }
   @font-face {
     font-family: "Dosis";
     font-style: normal;
     font-weight: 600;
-    src: url("./assets/fonts/Dosis-Medium.ttf");
+    src: url("/fonts/Dosis-Medium.ttf");
     src: local(""),
-      /* Modern Browsers */ url("./assets/fonts/Dosis-Medium.ttf")
-        format("truetype");
+      /* Modern Browsers */ url("/fonts/Dosis-Medium.ttf") format("truetype");
+    font-display: swap;
   }
   @font-face {
     font-family: "Dosis";
     font-style: normal;
     font-weight: 700;
-    src: url("./assets/fonts/Dosis-Bold.ttf");
+    src: url("/fonts/Dosis-Bold.ttf");
     src: local(""),
-      /* Modern Browsers */ url("./assets/fonts/Dosis-Bold.ttf")
-        format("truetype");
+      /* Modern Browsers */ url("/fonts/Dosis-Bold.ttf") format("truetype");
+    font-display: swap;
   }
 }
 
